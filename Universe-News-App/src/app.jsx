@@ -2,7 +2,6 @@ import React,{ useState } from 'react'
 import './app.css'
 import Navbar from './assets/Navbar.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ReactDOM from "react-dom/client";
 import News from './assets/News.jsx'
 import LoadingBar from 'react-top-loading-bar'
 
@@ -12,42 +11,15 @@ export const App=()=> {
   const [dcountry,setCountry]=useState("us");
   const apikey=import.meta.env.VITE_APIKEY;
 
-    const handleinClick=()=>{
-      console.log("india")
-      setCountry("in");
+    const handleClick=(country)=>{
+      console.log(country);
+      console.log("i am going to this country")
+      setCountry(country);
     }
-    const handleruClick=()=>{
-      setCountry("ru");
-      console.log("russia")
-    }    
-    const handleusClick=()=>{
-      setCountry("us");
-      console.log("usa")
-    }  
-    const handleauClick=()=>{
-      setCountry("au");
-      console.log("australia")
-    }  
-    const handlefrClick=()=>{
-      setCountry("fr");
-      console.log("france")
-    }  
-    const handledeClick=()=>{
-      setCountry("de");
-      console.log("germany")
-    }  
-    const handlechClick=()=>{
-      setCountry("ch");
-      console.log("china")
-    }  
-    const handlegbClick=()=>{
-      setCountry("gb");
-      console.log("Britain")
-    }  
     return (
       <div style={{backgroundColor:"grey"}}>
         <BrowserRouter>
-        <Navbar country={dcountry} handleinClick={handleinClick} handleruClick={handleruClick} handleusClick={handleusClick} handleauClick={handleauClick} handledeClick={handledeClick} handlegbClick={handlegbClick} handlechClick={handlechClick} handlefrClick={handlefrClick}/>
+        <Navbar country={dcountry} handleClick={handleClick}/>
         <LoadingBar
         color='#f11946'
         progress={progress}

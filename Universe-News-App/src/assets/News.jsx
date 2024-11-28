@@ -37,7 +37,7 @@ const News=(props)=> {
   }
     
   useEffect(() => {
-    update(); 
+     update();
      // eslint-disable-next-line//to remove the warning that you know and not want to change it
   }, [])
   const handlenextClick=async()=>{

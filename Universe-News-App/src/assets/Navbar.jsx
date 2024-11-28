@@ -47,14 +47,14 @@ const Navbar=(props)=> {
                   Country-{props.country}
                   </a>
                     <ul className="dropdown-menu">
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handleinClick}>India</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handleruClick}>Russia</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handleusClick}>USA</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handlechClick}>China</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handlegbClick}>UK</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handledeClick}>Germany</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handlefrClick}>France</Link></li>
-                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={props.handleauClick}>Australia</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("in")}>India</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("ru")}>Russia</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("us")}>USA</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("ch")}>China</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("gb")}>UK</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("de")}>Germany</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("fr")}>France</Link></li>
+                      <li><Link className="dropdown-item" to={`${location.pathname==="/"? "business": "/"}`} onClick={()=> props.handleClick("au")}>Australia</Link></li>
                     </ul>
                 </li>
               </ul>
