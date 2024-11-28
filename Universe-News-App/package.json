@@ -1,0 +1,24 @@
+{
+  "name": "universe-news-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
+    "preact": "^10.25.0",
+    "prop-types": "^15.8.1",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^7.0.1",
+    "react-top-loading-bar": "^2.3.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.1",
+    "vite": "^6.0.1"
+  }
+}
